@@ -43,6 +43,13 @@ console.log(evenNumbers);
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+const numeri = [1, 2, 3, 4, 5];
+
+numeri.forEach(function (numeriSingoli, i) {
+  numeriSingoli = numeriSingoli + 5;
+  console.log(numeriSingoli);
+});
+
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
@@ -50,6 +57,12 @@ console.log(evenNumbers);
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+
+const esercizio6 = [1, 2, 3, 4, 5];
+
+const ris6 = esercizio6.map((numeri, n) => numeri + n);
+
+console.log(ris6);
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
