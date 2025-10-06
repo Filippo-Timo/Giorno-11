@@ -30,20 +30,14 @@ randomNumbers();
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
+const numericArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const evenNumbers = numericArray.filter(numbers);
 
-const evenNumbers = () => {
-  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  let arr2 = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-      arr2.push(arr[i]);
-      console.log(arr2);
-    } else {
-    }
-  }
-};
+function numbers(even, i) {
+  return numericArray[i] % 2 === 0;
+}
 
-evenNumbers();
+console.log(evenNumbers);
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
