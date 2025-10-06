@@ -78,6 +78,29 @@ console.log(ris7);
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+const dispari = [];
+
+for (let i = 0; i < 100; i++) {
+  if (i % 2 != 0) {
+    dispari.push(i);
+  } else {
+  }
+}
+
+console.log(dispari);
+
+const dispari2 = [];
+
+for (let i = 0; i < 100; i++) {
+  dispari2.forEach(function (numero) {
+    if ((numero + i) % 2 != 0) {
+      dispari2.push(numero);
+    } else {
+    }
+  });
+}
+
+console.log(dispari2);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
