@@ -45,10 +45,20 @@ console.log(evenNumbers);
 
 const numeri = [1, 2, 3, 4, 5];
 
-numeri.forEach(function (numeriSingoli, i) {
-  numeriSingoli = numeriSingoli + 5;
-  console.log(numeriSingoli);
-});
+// numeri.forEach(function (numeriSingoli, i) {
+//   numeriSingoli = numeriSingoli + 5;
+//   console.log(numeriSingoli);
+// });
+
+const sommaNumeri = () => {
+  let somma = 0;
+  numeri.forEach((numero) => {
+    somma = somma + numero;
+  });
+  return somma;
+};
+
+console.log(sommaNumeri());
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
