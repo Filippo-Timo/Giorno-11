@@ -69,6 +69,12 @@ console.log(ris6);
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+const esercizio7 = ["ciao", "mi", "chiamo", "Filippo"];
+
+const ris7 = esercizio7.map((parole) => parole.length);
+
+console.log(ris7);
+
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
